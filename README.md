@@ -1,6 +1,4 @@
 # CalculatorKit
 Build your calculator app fast using CalculatorKit.
 
-<p style="text-align: center;">
-  <img alt="CalculatorKit" src="https://user-images.githubusercontent.com/34618339/99823808-2cb4c580-2b98-11eb-909e-72f15ca574bf.png" width="200"/>
-</p>
+  <img alt="CalculatorKit" src="https://user-images.githubusercontent.com/34618339/99823808-2cb4c580-2b98-11eb-909e-72f15ca574bf.png" height="100"/>
