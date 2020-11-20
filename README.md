@@ -3,5 +3,11 @@
 CalculatorKit is a library that helps you create calculator apps.  
 It provides everything about the calculator function on your behalf so that you can concentrate on implementing user interface.
 
+
 ---
 
+**Background**
+
+When I was creating a clone iOS Calculator, I realized that there were many rules about calculating. But to iOS beginner like me, it may be even hard work to implement UI. 
+
+This is why I've made this library. I hope you to enjoy just implementing user interface, because making beautiful UI is worth for itself!
