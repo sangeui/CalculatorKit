@@ -1,1 +1,1 @@
-<img alt="CalculatorKit" src="https://user-images.githubusercontent.com/34618339/99823808-2cb4c580-2b98-11eb-909e-72f15ca574bf.png" height="75"/>
+<img alt="CalculatorKit" src="https://user-images.githubusercontent.com/34618339/99825007-d5175980-2b99-11eb-9f70-bb04f6198f28.png" height="75"/>
