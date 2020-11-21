@@ -1,3 +1,5 @@
-struct CalculatorKit {
-    var text = "Hello, World!"
+class CalculatorKit {
+    class Manager {
+    
+    }
 }
