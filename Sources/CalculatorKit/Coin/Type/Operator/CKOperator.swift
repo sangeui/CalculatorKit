@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CKOperator {
+struct CKOperator: Equatable, CKExpressionItem {
     var type: CKOperatorType
     
     func calculate(_ first: Double, _ second: Double) -> Double {

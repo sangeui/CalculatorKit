@@ -34,6 +34,7 @@
 		4F4C7D1C2568F11600A9BDE0 /* CKDivideOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C7D1B2568F11600A9BDE0 /* CKDivideOperatorTests.swift */; };
 		4F4C7D332568FF4F00A9BDE0 /* CKExponentOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C7D322568FF4F00A9BDE0 /* CKExponentOperatorTests.swift */; };
 		4F4C7D3E256901F600A9BDE0 /* CKRootOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C7D3D256901F600A9BDE0 /* CKRootOperatorTests.swift */; };
+		4F4C7D48256906E500A9BDE0 /* CKCoinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C7D47256906E500A9BDE0 /* CKCoinTests.swift */; };
 		OBJ_23 /* CalculatorKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* CalculatorKit.swift */; };
 		OBJ_30 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_41 /* CalculatorKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* CalculatorKitTests.swift */; };
@@ -72,6 +73,7 @@
 		4F4C7D1B2568F11600A9BDE0 /* CKDivideOperatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKDivideOperatorTests.swift; sourceTree = "<group>"; };
 		4F4C7D322568FF4F00A9BDE0 /* CKExponentOperatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKExponentOperatorTests.swift; sourceTree = "<group>"; };
 		4F4C7D3D256901F600A9BDE0 /* CKRootOperatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKRootOperatorTests.swift; sourceTree = "<group>"; };
+		4F4C7D47256906E500A9BDE0 /* CKCoinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKCoinTests.swift; sourceTree = "<group>"; };
 		"CalculatorKit::CalculatorKit::Product" /* CalculatorKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CalculatorKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"CalculatorKit::CalculatorKitTests::Product" /* CalculatorKitTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = CalculatorKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_12 /* CalculatorKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorKitTests.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 		4F4C7CA8256833CB00A9BDE0 /* CKCoinTests */ = {
 			isa = PBXGroup;
 			children = (
+				4F4C7D47256906E500A9BDE0 /* CKCoinTests.swift */,
 			);
 			path = CKCoinTests;
 			sourceTree = "<group>";
@@ -141,9 +144,9 @@
 		4F4C7CB7256834A800A9BDE0 /* Type */ = {
 			isa = PBXGroup;
 			children = (
+				4F4C7CBC2568E35800A9BDE0 /* CKCoinType.swift */,
 				4F4C7CC92568E53A00A9BDE0 /* Operand */,
 				4F4C7CC82568E52F00A9BDE0 /* Operator */,
-				4F4C7CBC2568E35800A9BDE0 /* CKCoinType.swift */,
 			);
 			path = Type;
 			sourceTree = "<group>";
@@ -234,9 +237,9 @@
 			children = (
 				OBJ_12 /* CalculatorKitTests.swift */,
 				OBJ_13 /* XCTestManifests.swift */,
+				4F4C7CA8256833CB00A9BDE0 /* CKCoinTests */,
 				4F4C7CAA256833F500A9BDE0 /* CKOperatorTests */,
 				4F4C7CA9256833DE00A9BDE0 /* CKOperandTests */,
-				4F4C7CA8256833CB00A9BDE0 /* CKCoinTests */,
 			);
 			name = CalculatorKitTests;
 			path = Tests/CalculatorKitTests;
@@ -389,6 +392,7 @@
 				4F4C7D1C2568F11600A9BDE0 /* CKDivideOperatorTests.swift in Sources */,
 				4F4C7CFB2568ED9400A9BDE0 /* CKPlusOperatorTests.swift in Sources */,
 				4F4C7CC32568E4FD00A9BDE0 /* CKOperatorTests.swift in Sources */,
+				4F4C7D48256906E500A9BDE0 /* CKCoinTests.swift in Sources */,
 				4F4C7D3E256901F600A9BDE0 /* CKRootOperatorTests.swift in Sources */,
 				4F4C7D062568EE2B00A9BDE0 /* CKMinusOperatorTests.swift in Sources */,
 				4F4C7D332568FF4F00A9BDE0 /* CKExponentOperatorTests.swift in Sources */,

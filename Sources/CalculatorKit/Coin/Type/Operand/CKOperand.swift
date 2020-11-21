@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
-struct CKOperand {
+protocol CKExpressionItem {}
+struct CKOperand: Equatable, CKExpressionItem {
     var number: Double
 }
