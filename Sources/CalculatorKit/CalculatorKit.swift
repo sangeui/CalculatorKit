@@ -1,5 +1,2 @@
 class CalculatorKit {
-    class Manager {
-    
-    }
 }

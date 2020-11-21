@@ -35,6 +35,14 @@
 		4F4C7D332568FF4F00A9BDE0 /* CKExponentOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C7D322568FF4F00A9BDE0 /* CKExponentOperatorTests.swift */; };
 		4F4C7D3E256901F600A9BDE0 /* CKRootOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C7D3D256901F600A9BDE0 /* CKRootOperatorTests.swift */; };
 		4F4C7D48256906E500A9BDE0 /* CKCoinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C7D47256906E500A9BDE0 /* CKCoinTests.swift */; };
+		4F4C7D5B25694D8300A9BDE0 /* ManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C7D5A25694D8300A9BDE0 /* ManagerTests.swift */; };
+		4F4C7D6225694DB100A9BDE0 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C7D6125694DB100A9BDE0 /* Manager.swift */; };
+		4F4C7D6D25697C2000A9BDE0 /* CKFunctionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C7D6C25697C2000A9BDE0 /* CKFunctionTests.swift */; };
+		4F4C7D742569843700A9BDE0 /* CKSquareFunctionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C7D732569843700A9BDE0 /* CKSquareFunctionTests.swift */; };
+		4F4C7D7F2569852600A9BDE0 /* CKFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C7D7E2569852600A9BDE0 /* CKFunction.swift */; };
+		4F4C7D8F2569874500A9BDE0 /* CKCubeFunctionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C7D8E2569874500A9BDE0 /* CKCubeFunctionTests.swift */; };
+		4F4C7D9A256988DE00A9BDE0 /* CKNaturalExpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C7D99256988DE00A9BDE0 /* CKNaturalExpTests.swift */; };
+		4F4C7DA925698E2F00A9BDE0 /* CKPowersOfTenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C7DA825698E2F00A9BDE0 /* CKPowersOfTenTests.swift */; };
 		OBJ_23 /* CalculatorKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* CalculatorKit.swift */; };
 		OBJ_30 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_41 /* CalculatorKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* CalculatorKitTests.swift */; };
@@ -74,6 +82,14 @@
 		4F4C7D322568FF4F00A9BDE0 /* CKExponentOperatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKExponentOperatorTests.swift; sourceTree = "<group>"; };
 		4F4C7D3D256901F600A9BDE0 /* CKRootOperatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKRootOperatorTests.swift; sourceTree = "<group>"; };
 		4F4C7D47256906E500A9BDE0 /* CKCoinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKCoinTests.swift; sourceTree = "<group>"; };
+		4F4C7D5A25694D8300A9BDE0 /* ManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerTests.swift; sourceTree = "<group>"; };
+		4F4C7D6125694DB100A9BDE0 /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
+		4F4C7D6C25697C2000A9BDE0 /* CKFunctionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKFunctionTests.swift; sourceTree = "<group>"; };
+		4F4C7D732569843700A9BDE0 /* CKSquareFunctionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKSquareFunctionTests.swift; sourceTree = "<group>"; };
+		4F4C7D7E2569852600A9BDE0 /* CKFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKFunction.swift; sourceTree = "<group>"; };
+		4F4C7D8E2569874500A9BDE0 /* CKCubeFunctionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKCubeFunctionTests.swift; sourceTree = "<group>"; };
+		4F4C7D99256988DE00A9BDE0 /* CKNaturalExpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKNaturalExpTests.swift; sourceTree = "<group>"; };
+		4F4C7DA825698E2F00A9BDE0 /* CKPowersOfTenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKPowersOfTenTests.swift; sourceTree = "<group>"; };
 		"CalculatorKit::CalculatorKit::Product" /* CalculatorKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CalculatorKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"CalculatorKit::CalculatorKitTests::Product" /* CalculatorKitTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = CalculatorKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_12 /* CalculatorKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorKitTests.swift; sourceTree = "<group>"; };
@@ -144,9 +160,10 @@
 		4F4C7CB7256834A800A9BDE0 /* Type */ = {
 			isa = PBXGroup;
 			children = (
-				4F4C7CBC2568E35800A9BDE0 /* CKCoinType.swift */,
 				4F4C7CC92568E53A00A9BDE0 /* Operand */,
 				4F4C7CC82568E52F00A9BDE0 /* Operator */,
+				4F4C7D7D2569851800A9BDE0 /* Function */,
+				4F4C7CBC2568E35800A9BDE0 /* CKCoinType.swift */,
 			);
 			path = Type;
 			sourceTree = "<group>";
@@ -155,7 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				4F4C7CDE2568E90D00A9BDE0 /* CKOperator.swift */,
-				4F4C7CE42568EA2900A9BDE0 /* Operator Type */,
+				4F4C7CE42568EA2900A9BDE0 /* OperatorType */,
 			);
 			path = Operator;
 			sourceTree = "<group>";
@@ -168,12 +185,12 @@
 			path = Operand;
 			sourceTree = "<group>";
 		};
-		4F4C7CE42568EA2900A9BDE0 /* Operator Type */ = {
+		4F4C7CE42568EA2900A9BDE0 /* OperatorType */ = {
 			isa = PBXGroup;
 			children = (
 				4F4C7CE52568EA3800A9BDE0 /* CKOperatorType.swift */,
 			);
-			path = "Operator Type";
+			path = OperatorType;
 			sourceTree = "<group>";
 		};
 		4F4C7CEF2568ED6200A9BDE0 /* PlusOperatorTests */ = {
@@ -224,6 +241,82 @@
 			path = RootOperatorTests;
 			sourceTree = "<group>";
 		};
+		4F4C7D5925694D7000A9BDE0 /* ManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				4F4C7D5A25694D8300A9BDE0 /* ManagerTests.swift */,
+			);
+			path = ManagerTests;
+			sourceTree = "<group>";
+		};
+		4F4C7D6025694DA400A9BDE0 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				4F4C7D6125694DB100A9BDE0 /* Manager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		4F4C7D6B25697C0A00A9BDE0 /* CKFunctionTests */ = {
+			isa = PBXGroup;
+			children = (
+				4F4C7DA725698E1E00A9BDE0 /* PowersOfTenTests */,
+				4F4C7D6C25697C2000A9BDE0 /* CKFunctionTests.swift */,
+				4F4C7D98256988BD00A9BDE0 /* NaturalExponentialTests */,
+				4F4C7D8D2569873300A9BDE0 /* CubeFunctionTests */,
+				4F4C7D722569842200A9BDE0 /* SquareFunctionTests */,
+			);
+			path = CKFunctionTests;
+			sourceTree = "<group>";
+		};
+		4F4C7D722569842200A9BDE0 /* SquareFunctionTests */ = {
+			isa = PBXGroup;
+			children = (
+				4F4C7D732569843700A9BDE0 /* CKSquareFunctionTests.swift */,
+			);
+			path = SquareFunctionTests;
+			sourceTree = "<group>";
+		};
+		4F4C7D7D2569851800A9BDE0 /* Function */ = {
+			isa = PBXGroup;
+			children = (
+				4F4C7D7E2569852600A9BDE0 /* CKFunction.swift */,
+				4F4C7D842569852D00A9BDE0 /* FunctionType */,
+			);
+			path = Function;
+			sourceTree = "<group>";
+		};
+		4F4C7D842569852D00A9BDE0 /* FunctionType */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FunctionType;
+			sourceTree = "<group>";
+		};
+		4F4C7D8D2569873300A9BDE0 /* CubeFunctionTests */ = {
+			isa = PBXGroup;
+			children = (
+				4F4C7D8E2569874500A9BDE0 /* CKCubeFunctionTests.swift */,
+			);
+			path = CubeFunctionTests;
+			sourceTree = "<group>";
+		};
+		4F4C7D98256988BD00A9BDE0 /* NaturalExponentialTests */ = {
+			isa = PBXGroup;
+			children = (
+				4F4C7D99256988DE00A9BDE0 /* CKNaturalExpTests.swift */,
+			);
+			path = NaturalExponentialTests;
+			sourceTree = "<group>";
+		};
+		4F4C7DA725698E1E00A9BDE0 /* PowersOfTenTests */ = {
+			isa = PBXGroup;
+			children = (
+				4F4C7DA825698E2F00A9BDE0 /* CKPowersOfTenTests.swift */,
+			);
+			path = PowersOfTenTests;
+			sourceTree = "<group>";
+		};
 		OBJ_10 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,8 +328,10 @@
 		OBJ_11 /* CalculatorKitTests */ = {
 			isa = PBXGroup;
 			children = (
+				4F4C7D6B25697C0A00A9BDE0 /* CKFunctionTests */,
 				OBJ_12 /* CalculatorKitTests.swift */,
 				OBJ_13 /* XCTestManifests.swift */,
+				4F4C7D5925694D7000A9BDE0 /* ManagerTests */,
 				4F4C7CA8256833CB00A9BDE0 /* CKCoinTests */,
 				4F4C7CAA256833F500A9BDE0 /* CKOperatorTests */,
 				4F4C7CA9256833DE00A9BDE0 /* CKOperandTests */,
@@ -254,7 +349,7 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -263,7 +358,6 @@
 				OBJ_14 /* Products */,
 				OBJ_17 /* README.md */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -278,6 +372,7 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_9 /* CalculatorKit.swift */,
+				4F4C7D6025694DA400A9BDE0 /* Manager */,
 				4F4C7CAB2568341000A9BDE0 /* Coin */,
 			);
 			name = CalculatorKit;
@@ -350,7 +445,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_14 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -372,8 +467,10 @@
 				4F4C7CCF2568E72D00A9BDE0 /* CKOperand.swift in Sources */,
 				4F4C7CBD2568E35800A9BDE0 /* CKCoinType.swift in Sources */,
 				4F4C7CDF2568E90D00A9BDE0 /* CKOperator.swift in Sources */,
+				4F4C7D6225694DB100A9BDE0 /* Manager.swift in Sources */,
 				OBJ_23 /* CalculatorKit.swift in Sources */,
 				4F4C7CE62568EA3800A9BDE0 /* CKOperatorType.swift in Sources */,
+				4F4C7D7F2569852600A9BDE0 /* CKFunction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,14 +489,20 @@
 				4F4C7D1C2568F11600A9BDE0 /* CKDivideOperatorTests.swift in Sources */,
 				4F4C7CFB2568ED9400A9BDE0 /* CKPlusOperatorTests.swift in Sources */,
 				4F4C7CC32568E4FD00A9BDE0 /* CKOperatorTests.swift in Sources */,
+				4F4C7D6D25697C2000A9BDE0 /* CKFunctionTests.swift in Sources */,
+				4F4C7D8F2569874500A9BDE0 /* CKCubeFunctionTests.swift in Sources */,
 				4F4C7D48256906E500A9BDE0 /* CKCoinTests.swift in Sources */,
 				4F4C7D3E256901F600A9BDE0 /* CKRootOperatorTests.swift in Sources */,
 				4F4C7D062568EE2B00A9BDE0 /* CKMinusOperatorTests.swift in Sources */,
 				4F4C7D332568FF4F00A9BDE0 /* CKExponentOperatorTests.swift in Sources */,
+				4F4C7D9A256988DE00A9BDE0 /* CKNaturalExpTests.swift in Sources */,
 				4F4C7CD92568E8A200A9BDE0 /* CKOperandTests.swift in Sources */,
 				4F4C7D112568EFD200A9BDE0 /* CKMultiplyOperatorTests.swift in Sources */,
+				4F4C7D742569843700A9BDE0 /* CKSquareFunctionTests.swift in Sources */,
 				OBJ_41 /* CalculatorKitTests.swift in Sources */,
 				OBJ_42 /* XCTestManifests.swift in Sources */,
+				4F4C7D5B25694D8300A9BDE0 /* ManagerTests.swift in Sources */,
+				4F4C7DA925698E2F00A9BDE0 /* CKPowersOfTenTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -23,7 +23,7 @@ extension CKOperatorType {
         case .multiply: return first * second
         case .divide: return first / second
         case .exponent: return pow(first, second)
-        case .root: return exp(log(first) / second)
+        case .root: return pow(first, 1.0 / second)
         }
     }
 }
