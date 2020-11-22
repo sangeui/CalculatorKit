@@ -22,7 +22,6 @@
 
 /* Begin PBXBuildFile section */
 		4F4C7CAD2568342600A9BDE0 /* CKCoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C7CAC2568342600A9BDE0 /* CKCoin.swift */; };
-		4F4C7CBD2568E35800A9BDE0 /* CKCoinType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C7CBC2568E35800A9BDE0 /* CKCoinType.swift */; };
 		4F4C7CC32568E4FD00A9BDE0 /* CKOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C7CC22568E4FD00A9BDE0 /* CKOperatorTests.swift */; };
 		4F4C7CCF2568E72D00A9BDE0 /* CKOperand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C7CCE2568E72D00A9BDE0 /* CKOperand.swift */; };
 		4F4C7CD92568E8A200A9BDE0 /* CKOperandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C7CD82568E8A100A9BDE0 /* CKOperandTests.swift */; };
@@ -75,7 +74,6 @@
 
 /* Begin PBXFileReference section */
 		4F4C7CAC2568342600A9BDE0 /* CKCoin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKCoin.swift; sourceTree = "<group>"; };
-		4F4C7CBC2568E35800A9BDE0 /* CKCoinType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKCoinType.swift; sourceTree = "<group>"; };
 		4F4C7CC22568E4FD00A9BDE0 /* CKOperatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKOperatorTests.swift; sourceTree = "<group>"; };
 		4F4C7CCE2568E72D00A9BDE0 /* CKOperand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKOperand.swift; sourceTree = "<group>"; };
 		4F4C7CD82568E8A100A9BDE0 /* CKOperandTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKOperandTests.swift; sourceTree = "<group>"; };
@@ -175,7 +173,6 @@
 				4F4C7CC92568E53A00A9BDE0 /* Operand */,
 				4F4C7CC82568E52F00A9BDE0 /* Operator */,
 				4F4C7D7D2569851800A9BDE0 /* Function */,
-				4F4C7CBC2568E35800A9BDE0 /* CKCoinType.swift */,
 			);
 			path = Type;
 			sourceTree = "<group>";
@@ -531,7 +528,6 @@
 			files = (
 				4F4C7CAD2568342600A9BDE0 /* CKCoin.swift in Sources */,
 				4F4C7CCF2568E72D00A9BDE0 /* CKOperand.swift in Sources */,
-				4F4C7CBD2568E35800A9BDE0 /* CKCoinType.swift in Sources */,
 				4F4C7CDF2568E90D00A9BDE0 /* CKOperator.swift in Sources */,
 				4F4C7D6225694DB100A9BDE0 /* Manager.swift in Sources */,
 				OBJ_23 /* CalculatorKit.swift in Sources */,

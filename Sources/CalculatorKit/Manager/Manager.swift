@@ -18,6 +18,11 @@ extension CalculatorKit {
                 lastCoin = ckCoin
             }
         }
+        public func enter(_ operator: CKOperatorType) {
+        }
+        public func enter(_ function: CKFunctionType) {
+            
+        }
     }
     enum Key {
         case number(String)

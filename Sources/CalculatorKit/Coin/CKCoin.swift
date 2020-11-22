@@ -7,6 +7,8 @@
 
 import Foundation
 
+
+/// Encapsulation of `CKContents`.
 struct CKCoin {
     var contents: CKCoinContentsType
 }
