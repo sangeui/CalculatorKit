@@ -8,8 +8,9 @@
 import Foundation
 
 extension CalculatorKit {
-    public class Manager {
+    class Manager {
         var lastCoin: CKCoin?
+        public init() {}
         public func enter(_ key: Key) {
             if case let Key.number(numberString) = key,
                let number = Double(numberString) {
