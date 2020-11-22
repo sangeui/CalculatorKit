@@ -8,10 +8,9 @@
 import Foundation
 
 extension CalculatorKit {
-    class Manager {
+    public class Manager {
         var lastCoin: CKCoin?
-        public init() {}
-        public func enter(_ key: Key) {
+        func enter(_ key: Key) {
             if case let Key.number(numberString) = key,
                let number = Double(numberString) {
                 let ckOperand = CKOperand(number: number)
@@ -19,9 +18,9 @@ extension CalculatorKit {
                 lastCoin = ckCoin
             }
         }
-        public func enter(_ operator: CKOperatorType) {
+        func enter(_ operator: CKOperatorType) {
         }
-        public func enter(_ function: CKFunctionType) {
+        func enter(_ function: CKFunctionType) {
             
         }
     }

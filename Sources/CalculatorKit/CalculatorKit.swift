@@ -1,2 +1,2 @@
-class CalculatorKit {
+public class CalculatorKit {
 }
