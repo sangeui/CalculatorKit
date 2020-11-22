@@ -10,21 +10,18 @@ import Foundation
 extension CalculatorKit {
     public class Manager {
         var lastCoin: CKCoin?
-        func enter(_ key: Key) {
-            if case let Key.number(numberString) = key,
-               let number = Double(numberString) {
-                let ckOperand = CKOperand(number: number)
-                let ckCoin = CKCoin(contents: .ckOperand(ckOperand))
-                lastCoin = ckCoin
-            }
+        public init() {}
+        public func enter(_ operator: One) {
         }
-        func enter(_ operator: CKOperatorType) {
-        }
-        func enter(_ function: CKFunctionType) {
+        public func enter(_ function: Two) {
             
         }
+        public enum One {
+            case one, two, three
+        }
+        public enum Two {
+            case one, two, three
+        }
     }
-    enum Key {
-        case number(String)
-    }
+    
 }
