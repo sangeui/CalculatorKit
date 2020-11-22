@@ -17,7 +17,11 @@ public func allTests() -> [XCTestCaseEntry] {
         testCase(CKExponentOperatorTests.allTests),
         testCase(CKRootOperatorTests.allTests),
         
-        testCase(CKSquareFunctionTests.allTests)
+        testCase(CKSquareFunctionTests.allTests),
+        testCase(CKCubeFunctionTests.allTests),
+        testCase(CKSquareFunctionTests.allTests),
+        testCase(CKReciprocalFunctionTests),
+        testCase(CKSquareRootFunctionTests)
     ]
 }
 #endif
