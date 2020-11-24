@@ -8,7 +8,7 @@
 import Foundation
 
 /// it calculates the number depending on function type.
-struct CKFunction {
+struct CKFunction: Equatable, CKItem {
     /// Any function type can be used with the number.
     var type: CKFunctionType
     
@@ -19,6 +19,8 @@ struct CKFunction {
     func calculate(_ number: Double) -> Double {
         return type.calculate(number)
     }
+}
+extension CKFunction {
 }
 
 

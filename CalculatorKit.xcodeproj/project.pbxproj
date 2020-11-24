@@ -48,6 +48,15 @@
 		4F4C7DDD256A4C4700A9BDE0 /* CKNaturalLogFunctionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C7DDC256A4C4700A9BDE0 /* CKNaturalLogFunctionTests.swift */; };
 		4F4C7DE8256A4D8200A9BDE0 /* CKLogFunctionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C7DE7256A4D8200A9BDE0 /* CKLogFunctionTests.swift */; };
 		4F4C7DF3256A4FE900A9BDE0 /* CKFactorialFunctionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C7DF2256A4FE900A9BDE0 /* CKFactorialFunctionTests.swift */; };
+		4F4C7E2B256BA85D00A9BDE0 /* DigitStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C7E2A256BA85D00A9BDE0 /* DigitStoreTests.swift */; };
+		4F4C7E3A256BC50E00A9BDE0 /* DigitStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C7E39256BC50E00A9BDE0 /* DigitStore.swift */; };
+		4F4C7E4C256BC54E00A9BDE0 /* Array+filteredCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C7E4B256BC54E00A9BDE0 /* Array+filteredCount.swift */; };
+		4F4C7E56256CE99700A9BDE0 /* Double+negative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C7E55256CE99700A9BDE0 /* Double+negative.swift */; };
+		4F4C7E73256D083100A9BDE0 /* DigitManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C7E72256D083000A9BDE0 /* DigitManagerTests.swift */; };
+		4F4C7E7A256D1E9A00A9BDE0 /* Numeral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C7E79256D1E9900A9BDE0 /* Numeral.swift */; };
+		4F4C7E82256D1EDC00A9BDE0 /* Director.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C7E81256D1EDC00A9BDE0 /* Director.swift */; };
+		4F4C7E88256D1F0800A9BDE0 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C7E87256D1F0800A9BDE0 /* Storage.swift */; };
+		4F77BAC5256D2413004CFC4F /* NumeralStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F77BAC4256D2413004CFC4F /* NumeralStoreTests.swift */; };
 		OBJ_23 /* CalculatorKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* CalculatorKit.swift */; };
 		OBJ_30 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_41 /* CalculatorKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* CalculatorKitTests.swift */; };
@@ -100,6 +109,15 @@
 		4F4C7DDC256A4C4700A9BDE0 /* CKNaturalLogFunctionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKNaturalLogFunctionTests.swift; sourceTree = "<group>"; };
 		4F4C7DE7256A4D8200A9BDE0 /* CKLogFunctionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKLogFunctionTests.swift; sourceTree = "<group>"; };
 		4F4C7DF2256A4FE900A9BDE0 /* CKFactorialFunctionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKFactorialFunctionTests.swift; sourceTree = "<group>"; };
+		4F4C7E2A256BA85D00A9BDE0 /* DigitStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitStoreTests.swift; sourceTree = "<group>"; };
+		4F4C7E39256BC50E00A9BDE0 /* DigitStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitStore.swift; sourceTree = "<group>"; };
+		4F4C7E4B256BC54E00A9BDE0 /* Array+filteredCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+filteredCount.swift"; sourceTree = "<group>"; };
+		4F4C7E55256CE99700A9BDE0 /* Double+negative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+negative.swift"; sourceTree = "<group>"; };
+		4F4C7E72256D083000A9BDE0 /* DigitManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitManagerTests.swift; sourceTree = "<group>"; };
+		4F4C7E79256D1E9900A9BDE0 /* Numeral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Numeral.swift; sourceTree = "<group>"; };
+		4F4C7E81256D1EDC00A9BDE0 /* Director.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Director.swift; sourceTree = "<group>"; };
+		4F4C7E87256D1F0800A9BDE0 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		4F77BAC4256D2413004CFC4F /* NumeralStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumeralStoreTests.swift; sourceTree = "<group>"; };
 		"CalculatorKit::CalculatorKit::Product" /* CalculatorKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CalculatorKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"CalculatorKit::CalculatorKitTests::Product" /* CalculatorKitTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = CalculatorKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_12 /* CalculatorKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorKitTests.swift; sourceTree = "<group>"; };
@@ -380,6 +398,81 @@
 			path = FactorialFunctionTests;
 			sourceTree = "<group>";
 		};
+		4F4C7E29256BA84600A9BDE0 /* DigitStoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				4F4C7E2A256BA85D00A9BDE0 /* DigitStoreTests.swift */,
+			);
+			path = DigitStoreTests;
+			sourceTree = "<group>";
+		};
+		4F4C7E38256BC50400A9BDE0 /* DigitStore */ = {
+			isa = PBXGroup;
+			children = (
+				4F4C7E39256BC50E00A9BDE0 /* DigitStore.swift */,
+			);
+			path = DigitStore;
+			sourceTree = "<group>";
+		};
+		4F4C7E3F256BC53100A9BDE0 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				4F4C7E4A256BC54300A9BDE0 /* Extensions */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		4F4C7E4A256BC54300A9BDE0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4F4C7E4B256BC54E00A9BDE0 /* Array+filteredCount.swift */,
+				4F4C7E55256CE99700A9BDE0 /* Double+negative.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4F4C7E71256D082300A9BDE0 /* DigitManager */ = {
+			isa = PBXGroup;
+			children = (
+				4F4C7E72256D083000A9BDE0 /* DigitManagerTests.swift */,
+			);
+			path = DigitManager;
+			sourceTree = "<group>";
+		};
+		4F4C7E78256D1E6700A9BDE0 /* Numeral */ = {
+			isa = PBXGroup;
+			children = (
+				4F4C7E79256D1E9900A9BDE0 /* Numeral.swift */,
+				4F4C7E80256D1ED100A9BDE0 /* NumeralDirector */,
+				4F4C7E7F256D1EC700A9BDE0 /* NumeralStorage */,
+			);
+			path = Numeral;
+			sourceTree = "<group>";
+		};
+		4F4C7E7F256D1EC700A9BDE0 /* NumeralStorage */ = {
+			isa = PBXGroup;
+			children = (
+				4F4C7E87256D1F0800A9BDE0 /* Storage.swift */,
+			);
+			path = NumeralStorage;
+			sourceTree = "<group>";
+		};
+		4F4C7E80256D1ED100A9BDE0 /* NumeralDirector */ = {
+			isa = PBXGroup;
+			children = (
+				4F4C7E81256D1EDC00A9BDE0 /* Director.swift */,
+			);
+			path = NumeralDirector;
+			sourceTree = "<group>";
+		};
+		4F77BAC3256D23FE004CFC4F /* NumeralTests */ = {
+			isa = PBXGroup;
+			children = (
+				4F77BAC4256D2413004CFC4F /* NumeralStoreTests.swift */,
+			);
+			path = NumeralTests;
+			sourceTree = "<group>";
+		};
 		OBJ_10 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -391,9 +484,12 @@
 		OBJ_11 /* CalculatorKitTests */ = {
 			isa = PBXGroup;
 			children = (
+				4F77BAC3256D23FE004CFC4F /* NumeralTests */,
+				4F4C7E71256D082300A9BDE0 /* DigitManager */,
 				OBJ_12 /* CalculatorKitTests.swift */,
 				OBJ_13 /* XCTestManifests.swift */,
 				4F4C7D5925694D7000A9BDE0 /* ManagerTests */,
+				4F4C7E29256BA84600A9BDE0 /* DigitStoreTests */,
 				4F4C7CA8256833CB00A9BDE0 /* CKCoinTests */,
 				4F4C7D6B25697C0A00A9BDE0 /* CKFunctionTests */,
 				4F4C7CAA256833F500A9BDE0 /* CKOperatorTests */,
@@ -434,9 +530,12 @@
 		OBJ_8 /* CalculatorKit */ = {
 			isa = PBXGroup;
 			children = (
+				4F4C7E78256D1E6700A9BDE0 /* Numeral */,
 				OBJ_9 /* CalculatorKit.swift */,
 				4F4C7D6025694DA400A9BDE0 /* Manager */,
+				4F4C7E38256BC50400A9BDE0 /* DigitStore */,
 				4F4C7CAB2568341000A9BDE0 /* Coin */,
+				4F4C7E3F256BC53100A9BDE0 /* Helper */,
 			);
 			name = CalculatorKit;
 			path = Sources/CalculatorKit;
@@ -527,11 +626,17 @@
 			buildActionMask = 0;
 			files = (
 				4F4C7CAD2568342600A9BDE0 /* CKCoin.swift in Sources */,
+				4F4C7E3A256BC50E00A9BDE0 /* DigitStore.swift in Sources */,
+				4F4C7E7A256D1E9A00A9BDE0 /* Numeral.swift in Sources */,
 				4F4C7CCF2568E72D00A9BDE0 /* CKOperand.swift in Sources */,
 				4F4C7CDF2568E90D00A9BDE0 /* CKOperator.swift in Sources */,
 				4F4C7D6225694DB100A9BDE0 /* Manager.swift in Sources */,
+				4F4C7E56256CE99700A9BDE0 /* Double+negative.swift in Sources */,
+				4F4C7E88256D1F0800A9BDE0 /* Storage.swift in Sources */,
+				4F4C7E82256D1EDC00A9BDE0 /* Director.swift in Sources */,
 				OBJ_23 /* CalculatorKit.swift in Sources */,
 				4F4C7CE62568EA3800A9BDE0 /* CKOperatorType.swift in Sources */,
+				4F4C7E4C256BC54E00A9BDE0 /* Array+filteredCount.swift in Sources */,
 				4F4C7D7F2569852600A9BDE0 /* CKFunction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -548,7 +653,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				4F77BAC5256D2413004CFC4F /* NumeralStoreTests.swift in Sources */,
 				4F4C7D1C2568F11600A9BDE0 /* CKDivideOperatorTests.swift in Sources */,
+				4F4C7E2B256BA85D00A9BDE0 /* DigitStoreTests.swift in Sources */,
 				4F4C7CFB2568ED9400A9BDE0 /* CKPlusOperatorTests.swift in Sources */,
 				4F4C7DD2256A4B5D00A9BDE0 /* CKCubeRootFunctionTests.swift in Sources */,
 				4F4C7CC32568E4FD00A9BDE0 /* CKOperatorTests.swift in Sources */,
@@ -564,6 +671,7 @@
 				4F4C7DE8256A4D8200A9BDE0 /* CKLogFunctionTests.swift in Sources */,
 				4F4C7CD92568E8A200A9BDE0 /* CKOperandTests.swift in Sources */,
 				4F4C7D112568EFD200A9BDE0 /* CKMultiplyOperatorTests.swift in Sources */,
+				4F4C7E73256D083100A9BDE0 /* DigitManagerTests.swift in Sources */,
 				4F4C7D742569843700A9BDE0 /* CKSquareFunctionTests.swift in Sources */,
 				4F4C7DBC256A473300A9BDE0 /* CKReciprocalFunctionTests.swift in Sources */,
 				4F4C7DDD256A4C4700A9BDE0 /* CKNaturalLogFunctionTests.swift in Sources */,

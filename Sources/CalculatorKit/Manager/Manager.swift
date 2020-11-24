@@ -9,5 +9,41 @@ import Foundation
 
 extension CalculatorKit {
     public class Manager {
+        var digitStore = DigitStore()
+        var digitEntered = false
+        
+        init() {
+            try! digitStore.add(digit: "0")
+        }
+        
+        func enter(digit: String) {
+            do {
+                if !digitEntered {
+                    digitStore.digits.removeAll()
+                }
+                
+                try digitStore.add(digit: digit)
+            }
+            catch _ {
+                // TODO: Handling Error
+            }
+        }
+        private func getEnteredNumber() -> Double? {
+            guard digitEntered == true else {
+                return 0.0
+            }
+            var number: Double? = nil
+            do {
+                number = try digitStore.make()
+            } catch let error as DigitStore.DigitStoreError {
+                switch error {
+                case .failedMakingNumber(let string):
+                    print("failed making number: \(string)")
+                default: break
+                }
+            } catch {}
+            
+            return number
+        }
     }
 }

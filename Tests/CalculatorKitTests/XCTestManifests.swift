@@ -5,6 +5,8 @@ public func allTests() -> [XCTestCaseEntry] {
     return [
         testCase(CalculatorKitTests.allTests),
         testCase(ManagerTests.allTests),
+        testCase(DigitStoreTests.allTests),
+        
         testCase(CKCoinTests),
         
         testCase(CKOperandTests.allTests),

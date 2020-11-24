@@ -10,17 +10,21 @@ import Foundation
 
 /// Encapsulation of `CKContents`.
 struct CKCoin {
-    var contents: CKCoinContentsType
+    var contents: Contents
 }
 extension CKCoin {
-    func extractContents() -> CKExpressionItem {
+    func extractContents() -> CKItem {
         switch contents {
-        case .ckOperator(let extracted): return extracted as CKExpressionItem
-        case .ckOperand(let extracted): return extracted as CKExpressionItem
+        case .operator(let extracted): return extracted as CKItem
+        case .operand(let extracted): return extracted as CKItem
+        case .function(let extracted): return extracted as CKItem
         }
     }
 }
-enum CKCoinContentsType: Equatable {
-    case ckOperand(CKOperand)
-    case ckOperator(CKOperator)
+extension CKCoin {
+    enum Contents: Equatable {
+        case `operator`(CKOperator)
+        case operand(CKOperand)
+        case function(CKFunction)
+    }
 }
