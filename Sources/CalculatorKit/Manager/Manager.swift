@@ -12,10 +12,6 @@ extension CalculatorKit {
         var digitStore = DigitStore()
         var digitEntered = false
         
-        init() {
-            try! digitStore.add(digit: "0")
-        }
-        
         func enter(digit: String) {
             do {
                 if !digitEntered {
