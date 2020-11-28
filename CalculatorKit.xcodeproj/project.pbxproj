@@ -57,6 +57,8 @@
 		4F4C7E82256D1EDC00A9BDE0 /* Director.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C7E81256D1EDC00A9BDE0 /* Director.swift */; };
 		4F4C7E88256D1F0800A9BDE0 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C7E87256D1F0800A9BDE0 /* Storage.swift */; };
 		4F77BAC5256D2413004CFC4F /* NumeralStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F77BAC4256D2413004CFC4F /* NumeralStoreTests.swift */; };
+		4F77BAD8256E5CA6004CFC4F /* NumeralDirectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F77BAD7256E5CA6004CFC4F /* NumeralDirectorTests.swift */; };
+		4F77BADE256EB9CA004CFC4F /* Array+last.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F77BADD256EB9C9004CFC4F /* Array+last.swift */; };
 		OBJ_23 /* CalculatorKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* CalculatorKit.swift */; };
 		OBJ_30 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_41 /* CalculatorKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* CalculatorKitTests.swift */; };
@@ -118,6 +120,8 @@
 		4F4C7E81256D1EDC00A9BDE0 /* Director.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Director.swift; sourceTree = "<group>"; };
 		4F4C7E87256D1F0800A9BDE0 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		4F77BAC4256D2413004CFC4F /* NumeralStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumeralStoreTests.swift; sourceTree = "<group>"; };
+		4F77BAD7256E5CA6004CFC4F /* NumeralDirectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumeralDirectorTests.swift; sourceTree = "<group>"; };
+		4F77BADD256EB9C9004CFC4F /* Array+last.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+last.swift"; sourceTree = "<group>"; };
 		"CalculatorKit::CalculatorKit::Product" /* CalculatorKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CalculatorKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"CalculatorKit::CalculatorKitTests::Product" /* CalculatorKitTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = CalculatorKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_12 /* CalculatorKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorKitTests.swift; sourceTree = "<group>"; };
@@ -427,6 +431,7 @@
 			children = (
 				4F4C7E4B256BC54E00A9BDE0 /* Array+filteredCount.swift */,
 				4F4C7E55256CE99700A9BDE0 /* Double+negative.swift */,
+				4F77BADD256EB9C9004CFC4F /* Array+last.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -469,6 +474,7 @@
 			isa = PBXGroup;
 			children = (
 				4F77BAC4256D2413004CFC4F /* NumeralStoreTests.swift */,
+				4F77BAD7256E5CA6004CFC4F /* NumeralDirectorTests.swift */,
 			);
 			path = NumeralTests;
 			sourceTree = "<group>";
@@ -634,6 +640,7 @@
 				4F4C7E56256CE99700A9BDE0 /* Double+negative.swift in Sources */,
 				4F4C7E88256D1F0800A9BDE0 /* Storage.swift in Sources */,
 				4F4C7E82256D1EDC00A9BDE0 /* Director.swift in Sources */,
+				4F77BADE256EB9CA004CFC4F /* Array+last.swift in Sources */,
 				OBJ_23 /* CalculatorKit.swift in Sources */,
 				4F4C7CE62568EA3800A9BDE0 /* CKOperatorType.swift in Sources */,
 				4F4C7E4C256BC54E00A9BDE0 /* Array+filteredCount.swift in Sources */,
@@ -668,6 +675,7 @@
 				4F4C7D062568EE2B00A9BDE0 /* CKMinusOperatorTests.swift in Sources */,
 				4F4C7D332568FF4F00A9BDE0 /* CKExponentOperatorTests.swift in Sources */,
 				4F4C7D9A256988DE00A9BDE0 /* CKNaturalExpTests.swift in Sources */,
+				4F77BAD8256E5CA6004CFC4F /* NumeralDirectorTests.swift in Sources */,
 				4F4C7DE8256A4D8200A9BDE0 /* CKLogFunctionTests.swift in Sources */,
 				4F4C7CD92568E8A200A9BDE0 /* CKOperandTests.swift in Sources */,
 				4F4C7D112568EFD200A9BDE0 /* CKMultiplyOperatorTests.swift in Sources */,

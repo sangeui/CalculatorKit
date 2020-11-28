@@ -9,78 +9,74 @@ import XCTest
 @testable import CalculatorKit
 
 class NumeralStoreTests: XCTestCase {
-    var store: Numeral.Storage!
-    var maxCount = 9
+    var storage: Numeral.Storage!
     
     override func setUp() {
-        store = Numeral.Storage()
-        store.maxCount = 9
+        storage = Numeral.Storage()
     }
-    override func tearDown() { store = nil }
-    
-    func givenMaxNumberOfDigits() {
-        let digits = String(repeating: "1", count: maxCount)
-        digits.forEach { try? store.keep("\($0)") }
+    override func tearDown() {
+        storage = nil
     }
-    func givenCertainNumberofDigits(_ count: Int) {
-        let digits = String(repeating: "1", count: count)
-        digits.forEach { try? store.keep("\($0)") }
+    func givenDigits(_ digits: String...) {
+        digits.forEach { storage.save($0) }
     }
-    
-    // MARK: - When entered a value (digit) typed `String`
-    func testStoreDigitWhenEntered() {
-        let digitString = "1"
-        try? store.keep(digitString)
-        XCTAssertEqual(digitString, store.numeral.joined())
+    func givenOneToFiveDigits() {
+        givenDigits("1", "2", "3", "4", "5")
     }
-    func testThrowErrorWhenInvalidValueEntered() {
-        let invalidString = "d"
-        XCTAssertThrowsError(try store.keep(invalidString))
+    func givenOneToFiveDigitsAndDecimal() {
+        givenOneToFiveDigits()
+        storage.decimal()
     }
-    func testThrowErrorWhenEnteredMoreThanMaxLength() {
-        givenCertainNumberofDigits(maxCount+1)
-        XCTAssertEqual(store.maxCount, store.numeral.count)
+    func testKeepDigit() {
+        givenOneToFiveDigits()
+        XCTAssertEqual("12345", storage.numeral.joined())
     }
-    // MARK: -
-    func testIsSetAsDecimal() {
-        store.set(.decimal)
-        XCTAssertTrue(store.isDecimal)
+    func testReturnNumber() {
+        // given
+        givenOneToFiveDigits()
+        // then
+        let result = storage.load()
+        XCTAssertNotNil(result)
+        XCTAssertEqual(result!, 12345)
     }
-    func testIsDecimalFormedNumberWhenReturns() {
-        try? store.keep("1")
-        try? store.keep("2")
-        store.set(.decimal)
-        try? store.keep("3")
+    func testSetDecimal() {
+        // given
+        givenOneToFiveDigitsAndDecimal()
+        // then
+        let last = storage.numeral.last
+        XCTAssertNotNil(last)
+        XCTAssertEqual(last!, ".")
+        XCTAssertTrue(storage.isDecimal)
+    }
+    func testUnsetDecimalWhenLastIsDecimal() {
+        // given
+        givenOneToFiveDigitsAndDecimal()
+        // when
+        storage.decimal()
+        // then
+        let last = storage.numeral.last
+        XCTAssertNotNil(last)
+        XCTAssertFalse(storage.isDecimal)
+        XCTAssertFalse(last == ".")
+    }
+    func testIsPositiveWhenCreated() {
+        XCTAssertFalse(storage.isNegative)
+    }
+    func testIsNegativeWhenSetToNegative() {
+        storage.signs(.negative)
+        XCTAssertTrue(storage.isNegative)
+    }
+    func testReturnsTheProperNumber() {
+        "12383".forEach { storage.save("\($0)")}
+        storage.decimal()
+        storage.save("5")
+        storage.decimal()
+        storage.decimal()
+        storage.isNegative = true
         
-        XCTAssertEqual(store.numeral.joined(), "12.3")
-    }
-    func testIgnoreDecimalPointAsCount() {
-        try? store.keep("1")
-        try? store.keep("2")
-        store.set(.decimal)
-        try? store.keep("3")
+        let result = storage.load()
         
-        XCTAssertEqual(store.numCount, 3)
+        XCTAssertNotNil(result)
+        XCTAssertEqual(result, -12383.5)
     }
-    func testSetAsDecimalModeWhenTheNumberIsMax() {
-        // Cannot be set as the decimal mode when the maximum count of the number is reached.
-        givenCertainNumberofDigits(maxCount)
-        store.set(.decimal)
-        
-        XCTAssertFalse(store.isDecimal)
-    }
-    func testIsSetAsNegative() {
-        store.set(.negative)
-        XCTAssertTrue(store.isNegative)
-    }
-    func testIsSetAsPositive() {
-        store.set(.positive)
-        XCTAssertFalse(store.isNegative)
-    }
-    
-    func test() {}
-    static var allTests = [
-        ("testIsSetAsDecimal", testIsSetAsDecimal),
-        ("testIsSetAsNegative", testIsSetAsNegative)
-    ]
 }
