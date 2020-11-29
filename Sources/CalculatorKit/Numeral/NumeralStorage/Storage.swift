@@ -21,11 +21,12 @@ extension Numeral {
         
         /// It receive a digit typed `String` which is stored in it.
         /// - Parameter digitString: A digit typed `String`
-        func save(_ digitString: Digit) {
+        func save(_ digitString: String) {
             numeral.append(digitString)
         }
         /// Returns Optional `Double`, it will return `nil` if the number is invalid.
         func load() -> Double? {
+            defer { reset() }
             guard let numeral = Double(numeral.joined()) else { return nil }
             if isNegative { return numeral.negative }
             else { return numeral }
@@ -49,6 +50,11 @@ extension Numeral.Storage {
     }
 }
 private extension Numeral.Storage {
+    func reset() {
+        numeral.removeAll()
+        isDecimal = false
+        isNegative = false
+    }
     func setDecimal() {
         isDecimal = true
         numeral.append(".")

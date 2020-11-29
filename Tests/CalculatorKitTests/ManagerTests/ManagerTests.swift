@@ -9,14 +9,17 @@ import XCTest
 @testable import CalculatorKit
 
 class ManagerTests: XCTestCase {
-    func test() {}
+    var manager: CalculatorKit.Manager!
+    override func setUp() {
+        manager = CalculatorKit.Manager()
+    }
+    override func tearDown() {
+        manager = nil
+    }
     func testEnterNumber() {
+        manager.enter(.number("3"))
+        
+        XCTAssertEqual(manager.numeralDirector.peek(), "3")
     }
-    func testEnterOperator() {
-    }
-    func testEnterFunction() {
-    }
-    static var allTests = [
-        ("testEnterNumber", testEnterNumber),
-    ]
+    static var allTests = [("testEnterNumber", testEnterNumber)]
 }

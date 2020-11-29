@@ -7,41 +7,44 @@
 
 import Foundation
 
+protocol CalculatorErrorDelegate {
+    func calculatorFailedEnteringNumber(_ error: Error)
+}
+protocol CalculatorManagerDelegate {
+    func calculatorChangedEnteredNumber(_ number: String)
+}
+
 extension CalculatorKit {
     public class Manager {
-        var digitStore = DigitStore()
-        var digitEntered = false
+        var managerDelegate: CalculatorManagerDelegate?
+        var errorDelegate: CalculatorErrorDelegate?
+        var numeralDirector = Numeral.Director()
         
-        public init() {}
-        
-        func enter(digit: String) {
-            do {
-                if !digitEntered {
-                    digitStore.digits.removeAll()
-                }
-                
-                try digitStore.add(digit: digit)
-            }
-            catch _ {
-                // TODO: Handling Error
+        var currentProcessingNumber = "" {
+            didSet {
+                managerDelegate?.calculatorChangedEnteredNumber(currentProcessingNumber)
             }
         }
-        private func getEnteredNumber() -> Double? {
-            guard digitEntered == true else {
-                return 0.0
-            }
-            var number: Double? = nil
-            do {
-                number = try digitStore.make()
-            } catch let error as DigitStore.DigitStoreError {
-                switch error {
-                case .failedMakingNumber(let string):
-                    print("failed making number: \(string)")
-                default: break
-                }
-            } catch {}
+    }
+}
+extension CalculatorKit.Manager {
+    func enter(_ input: Input) {
+        switch input {
+        case .number(let number): enterNumber(number)
+        }
+    }
+}
+extension CalculatorKit.Manager {
+    enum Input {
+        case number(String)
+    }
+}
+private extension CalculatorKit.Manager {
+    func enterNumber(_ number: String) {
+        do {
+            try numeralDirector.save(number)
             
-            return number
         }
+        catch let error { errorDelegate?.calculatorFailedEnteringNumber(error) }
     }
 }
